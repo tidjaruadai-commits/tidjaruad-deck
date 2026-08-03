@@ -855,7 +855,48 @@ body.laser-on,body.laser-on *{cursor:none !important}
   .ind .ii .ico{width:58px;height:58px;margin:0}
   .pillar{display:flex;flex-direction:column;align-items:center;text-align:center}
   .pillar .pi{margin:.2rem 0 .45rem}
-</style>
+  /* Page 17 — rebalance the risk-free offer into a full-width proof grid */
+  section:nth-of-type(17) .two { display:block; height:auto; width:100%; }
+  section:nth-of-type(17) .two > div:first-child { width:100%; }
+  section:nth-of-type(17) .eyebrow,
+  section:nth-of-type(17) h2 { text-align:center; }
+  section:nth-of-type(17) h2 { font-size:2.45rem !important; margin-bottom:1.35rem !important; }
+  section:nth-of-type(17) .svcgrid { grid-template-columns:repeat(4,1fr) !important; gap:1.15rem; margin-top:1.1rem; }
+  section:nth-of-type(17) .svc { min-height:220px; padding:1.45rem 1rem 1.35rem; justify-content:center; }
+  section:nth-of-type(17) .svc .si { width:88px; height:88px; margin-bottom:1rem; }
+  section:nth-of-type(17) .svc .si .ico { width:72px; height:72px; }
+  section:nth-of-type(17) .svc .st { font-size:1.2rem; margin:.15rem 0 .42rem; }
+  section:nth-of-type(17) .svc .sd { font-size:1rem; max-width:22ch; }  /* Page 18–19 — close the deck with a clearer CTA and contact system */
+  section:nth-of-type(18) {
+    justify-content:center;
+    align-items:flex-start;
+    padding:0 5.5rem;
+    background:radial-gradient(85% 115% at 78% 25%, #1C2C61 0%, #0D173B 46%, #070D22 100%);
+  }
+  section:nth-of-type(18) .tgt { right:3%; bottom:4%; width:37%; filter:drop-shadow(0 22px 38px rgba(0,0,0,.52)); }
+  section:nth-of-type(18) h2 { font-size:3.65rem; line-height:1.04; max-width:14ch; margin-bottom:.25rem; letter-spacing:-.045em; }
+  section:nth-of-type(18) h2 span { color:var(--red); }
+  section:nth-of-type(18) .free { margin:1.25rem 0 1.35rem; max-width:38ch; padding:1rem 1.35rem; border-color:rgba(255,51,71,.72); background:rgba(255,51,71,.13); box-shadow:0 12px 28px rgba(0,0,0,.16); }
+  section:nth-of-type(18) .free b { color:#fff; }
+  section:nth-of-type(18) .contact { width:43rem; max-width:100%; gap:.8rem; }
+  section:nth-of-type(18) .ci { min-height:72px; padding:.55rem .75rem; border:1px solid rgba(231,233,255,.13); border-radius:15px; background:rgba(255,255,255,.045); }
+  section:nth-of-type(18) .cicon { flex:0 0 auto; width:48px; height:48px; justify-content:center; border-radius:13px; background:rgba(255,255,255,.9); }
+  section:nth-of-type(18) .cicon .ico { width:43px; height:43px; }
+  section:nth-of-type(18) .cv { font-size:1.03rem; }
+
+  section:nth-of-type(19) {
+    background:radial-gradient(55% 80% at 50% 0%, rgba(255,51,71,.14), transparent 58%), #070D22;
+    padding:0 3rem;
+  }
+  section:nth-of-type(19) .clogo2 { height:58px; margin-bottom:1rem; filter:drop-shadow(0 8px 20px rgba(0,0,0,.25)); }
+  section:nth-of-type(19) h2 { font-size:2.65rem; letter-spacing:-.045em; margin-bottom:.35rem; }
+  section:nth-of-type(19) .sub { color:#B8C3E4; margin-bottom:1.35rem; letter-spacing:.04em; }
+  section:nth-of-type(19) .contact { width:100%; max-width:60rem !important; grid-template-columns:repeat(3,1fr); gap:.85rem; }
+  section:nth-of-type(19) .ci { min-height:82px; padding:.7rem .8rem; border:1px solid rgba(231,233,255,.14); border-radius:15px; background:rgba(255,255,255,.045); }
+  section:nth-of-type(19) .cicon { flex:0 0 auto; width:48px; height:48px; justify-content:center; border-radius:13px; background:rgba(255,255,255,.92); }
+  section:nth-of-type(19) .cicon .ico { width:43px; height:43px; }
+  section:nth-of-type(19) .ci>div { min-width:0; }
+  section:nth-of-type(19) .cv { font-size:.95rem; line-height:1.25; overflow-wrap:anywhere; }</style>
 <svg width="0" height="0" style="position:absolute;pointer-events:none" aria-hidden="true"><defs>
 <linearGradient id="tileG" x1="16" y1="12" x2="106" y2="110" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset=".55" stop-color="#F5F6FC"/><stop offset="1" stop-color="#ECEEFA"/></linearGradient>
 <linearGradient id="navyG" x1="28" y1="24" x2="92" y2="98" gradientUnits="userSpaceOnUse"><stop stop-color="#30366F"/><stop offset=".48" stop-color="#1B1D45"/><stop offset="1" stop-color="#11132F"/></linearGradient>
@@ -1011,10 +1052,10 @@ body.laser-on,body.laser-on *{cursor:none !important}
     <div class="eyebrow">Risk-free start</div>
     <h2 style="font-size:2rem;font-weight:800;color:var(--navy);line-height:1.15;margin-bottom:.8rem">รับ Audit กลยุทธ์ฟรี<br><span class="hl">มูลค่า 3,000 บาท</span></h2>
     <div class="svcgrid" style="grid-template-columns:1fr 1fr">
-      <div class="svc"><div class="si"></div><div class="st">วิเคราะห์แอดปัจจุบัน</div><div class="sd">หาจุดรั่ว + โอกาสโต</div></div>
-      <div class="svc"><div class="si"></div><div class="st">ตอบกลับใน 2 ชม.</div><div class="sd">ไม่ต้องรอนาน</div></div>
-      <div class="svc"><div class="si"></div><div class="st">ไม่มีข้อผูกมัด</div><div class="sd">รู้ผลก่อนตัดสินใจ</div></div>
-      <div class="svc"><div class="si"></div><div class="st">ทิศทางที่ทำได้จริง</div><div class="sd">พร้อมตัวเลขคาดการณ์</div></div>
+      <div class="svc"><div class="si"><svg class="ico risk-icon" viewBox="0 0 120 120" aria-hidden="true"><rect x="24" y="55" width="13" height="31" rx="3" fill="var(--blue)" opacity=".28"/><rect x="46" y="42" width="13" height="44" rx="3" fill="var(--blue)" opacity=".52"/><rect x="68" y="28" width="13" height="58" rx="3" fill="var(--red)" opacity=".9"/><circle cx="71" cy="42" r="20" fill="var(--cream)" stroke="var(--navy)" stroke-width="5"/><path d="m85 57 14 14" stroke="var(--navy)" stroke-width="6" stroke-linecap="round"/><path d="M26 94h72" stroke="var(--navy)" stroke-width="5" stroke-linecap="round"/></svg></div><div class="st">วิเคราะห์แอดปัจจุบัน</div><div class="sd">หาจุดรั่ว + โอกาสโต</div></div>
+      <div class="svc"><div class="si"><svg class="ico risk-icon" viewBox="0 0 120 120" aria-hidden="true"><path d="M22 28h52a12 12 0 0 1 12 12v23a12 12 0 0 1-12 12H49L34 88V75h-6a12 12 0 0 1-12-12V40a12 12 0 0 1 12-12Z" fill="var(--navy)"/><path d="M31 49h33M31 61h21" stroke="var(--cream)" stroke-width="5" stroke-linecap="round"/><circle cx="85" cy="83" r="22" fill="var(--cream)" stroke="var(--red)" stroke-width="5"/><path d="M85 71v13l9 6" stroke="var(--red)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="st">ตอบกลับใน 2 ชม.</div><div class="sd">ไม่ต้องรอนาน</div></div>
+      <div class="svc"><div class="si"><svg class="ico risk-icon" viewBox="0 0 120 120" aria-hidden="true"><path d="M42 36 27 51a13 13 0 0 0 0 18l11 11a13 13 0 0 0 18 0l10-10" fill="none" stroke="var(--navy)" stroke-width="6" stroke-linecap="round"/><path d="m78 84 15-15a13 13 0 0 0 0-18L82 40a13 13 0 0 0-18 0L54 50" fill="none" stroke="var(--red)" stroke-width="6" stroke-linecap="round"/><path d="m43 60 10 10 24-25" fill="none" stroke="var(--navy)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="st">ไม่มีข้อผูกมัด</div><div class="sd">รู้ผลก่อนตัดสินใจ</div></div>
+      <div class="svc"><div class="si"><svg class="ico risk-icon" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="35" fill="var(--cream)" stroke="var(--navy)" stroke-width="5"/><path d="M60 16v15M60 89v15M16 60h15M89 60h15" stroke="var(--blue)" stroke-width="5" stroke-linecap="round"/><path d="m60 60 24-20" stroke="var(--red)" stroke-width="7" stroke-linecap="round"/><path d="m60 60-8 22" stroke="var(--navy)" stroke-width="6" stroke-linecap="round"/><circle cx="60" cy="60" r="7" fill="var(--red)"/><path d="M60 24 66 38 81 44 66 50 60 65 54 50 39 44 54 38Z" fill="var(--red)" opacity=".18"/></svg></div><div class="st">ทิศทางที่ทำได้จริง</div><div class="sd">พร้อมตัวเลขคาดการณ์</div></div>
     </div>
   </div>
   
