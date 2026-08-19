@@ -2,6 +2,7 @@
 <html lang="th"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ติดจรวด — Sale Deck 2026</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NT76SJTN');</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
 
@@ -1397,6 +1398,48 @@ var T={
   document.addEventListener('webkitfullscreenchange',sync);
   document.addEventListener('mousemove',peek);
   document.addEventListener('touchstart',peek,{passive:true});
+})();
+
+</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT76SJTN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>
+(function(){
+  window.dataLayer = window.dataLayer || [];
+  var slides = document.querySelectorAll('.slide');
+  function label(i){
+    var s = slides[i]; if(!s) return 'slide ' + (i+1);
+    var e = s.querySelector('.pf-hook') || s.querySelector('.cs-brand')
+         || s.querySelector('.sec-header h2') || s.querySelector('h1,h2');
+    if(!e) return 'slide ' + (i+1);
+    var t = e.innerHTML.replace(/<br[^>]*>/gi,' ').replace(/<[^>]+>/g,'')
+             .replace(/&[a-z]+;/gi,' ').replace(/\s+/g,' ').trim();
+    return t.slice(0,60) || ('slide ' + (i+1));
+  }
+  var t0 = new Date().getTime(), prev = 0;
+  function push(i, secs){
+    window.dataLayer.push({
+      event: 'slide_view',
+      slide_number: i + 1,
+      slide_title: label(i),
+      seconds_on_previous: secs
+    });
+  }
+  var _g = goTo;
+  goTo = function(n){
+    var now = new Date().getTime();
+    var secs = Math.round((now - t0) / 1000);
+    _g(n);
+    if (current !== prev) { push(current, secs); t0 = now; prev = current; }
+  };
+  push(0, 0);
+  window.addEventListener('beforeunload', function(){
+    window.dataLayer.push({
+      event: 'deck_exit',
+      slide_number: current + 1,
+      slide_title: label(current),
+      seconds_on_previous: Math.round((new Date().getTime() - t0) / 1000)
+    });
+  });
 })();
 
 </script>
